@@ -1,0 +1,60 @@
+ IP ADDRESS 192.168.126.232
+
+ CODE EXECUTE:-nmap sS 192.168.126.232
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PORT DETAILS
+
+ PORT     STATE      SERVICE
+135/tcp   open        msrpc
+139/tcp   open     netbios-ssn
+445/tcp   open     microsoft-ds
+2869/tcp  open       icslap  
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                        PORT **135**
+                                                
+                                                     *SERVICES RUNNING*
+
+        Port 135 is commonly associated with the Remote Procedure Call (RPC) service, particularly in Windows environments
+                                                       
+                                                    *RISK DUE TO ITS OPEN*  
+
+ Attackers can exploit vulnerabilities in RPC to execute malicious code, gain unauthorized access, or launch denial-of-service attacks
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                         PORT **139**
+                                              
+                                                     *SERVICES RUNNING*
+
+Port 139 is primarily used by the NetBIOS Session Service. This service allows applications on a local network to communicate with each   other, facilitating tasks like file and printer sharing
+                                                       
+                                                    *RISK DUE TO ITS OPEN*  
+
+                     it can expose shared resources like files and printers to potential attackers
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                         PORT **445**
+                                              
+                                                     *SERVICES RUNNING*
+
+Port 445 is primarily used by the Server Message Block (SMB) protocol, which enables file and printer sharing over a network
+                                                       
+                                                    *RISK DUE TO ITS OPEN*  
+
+Opening port 455, also known as the SMB (Server Message Block) port, on a computer or network can expose systems to various security risks, particularly if the system is running older versions of SMB that are vulnerable to exploits. Attackers can leverage these vulnerabilities to gain unauthorized access, potentially leading to data breaches, malware infections, or even denial-of-service attacks. 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                         PORT **2869**
+                                              
+                                                     *SERVICES RUNNING*
+
+Port 2869 is primarily associated with the Internet Connection Sharing (ICS) service and the Universal Plug and Play (UPnP) framework in Windows operating systems. It's used for device discovery, registration, and control, particularly for devices like Xbox and Network Media Players     
+                                                  
+                                                    *RISK DUE TO ITS OPEN*  
+
+Opening port 2869 on a network exposes it to potential security risks, primarily related to the Internet Connection Sharing (ICS) service in Windows. Specifically, it can be vulnerable to remote code execution attacks. This means attackers could potentially take control of a system by sending specially crafted packets to this port
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
